@@ -1,0 +1,144 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSAM - Services</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- Menu Panel 
+    <!-- ======================================================================= -->
+    <div class="container">
+        <div id="navOverlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-sm-8 offset-sm-2" style="border-color: white">
+                    <a href="/index"><img src="{% static 'images/me_cascada.jpg' %}" class="img-circle" alt="My image"/></a>
+                    </br>
+                    </br>
+                    <a href="/bio" class="reader-shadow">Bio</a>
+                    </br>
+                    <a href="/profile" class="reader-shadow">Perfil Profesional</a>
+                    </br>
+                    <a href="/services" class="reader-shadow">Portafolio</a>
+                    </br>
+                    <a href="/projects" class="reader-shadow">Proyectos</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-icon">
+            <span onclick="openNav()">&#119973;</span>    
+        </div>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Skills and Services
+    <!-- ======================================================================= -->
+    <div class="container">
+        <h1 class="reader-tittle text-center">Habilidades y Servicios</h1>
+        <div class="row col-sm-10 col-md-8 offset-md-2">
+            <p class="reader text-justify">
+                Tengo conocimientos y habilidades con herramientas informáticas que se aplican de acuerdo a los campos de acción más relevantes en diferentes ámbitos; abstraigo el valor significativo que implica el uso y gestión de software libre para desarrollar dichas tareas, sin desestimar las ventajas que permiten diferenciar entre una y otra licencia de software. Es así como busco poner en práctica habilidades mínimas para manipular un determinado software según los compromisos y objetivos acordados.
+            </p>
+        </div>
+        
+        <div class="row col-sm-10 col-md-8 offset-md-2"">
+            <div class="container">
+                <h3 style="color:black"><i>&#10004;</i> Desarrollo y Contenido Web</h3></br>
+            </div>
+            
+            <div class="col-sm-2 col-md-4 col-lg-4">
+                <div >
+                    <span onclick="openNav()"><img src="{% static 'images/ingeniero-programador.jpg' %}" class="img-thumbnail" /></span>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-lg-8">
+                <span class="reader"><i> Frameworks:</i></span></br>
+                <p class="reader" style="background-color: red"><i>&#10004;</i> <b>  Ruby on Rails</b></p>
+                <p class="reader" style="background-color: green"><i>&#10004;</i> <b>  Python and Django</b></p></br>
+
+                <span class="reader"><i> Herramientas:</i></span></br>
+                <p class="reader" style="color: white; background-color: blue"><i>&#10004;</i> <b> Html, CSS, JavaScript, Bootstrap, CMS/Plataformas</b></b></p>
+            </div>
+        </div>
+
+        <div class="row col-sm-10 col-md-8 offset-md-2"">
+            <div class="container">
+                </b><h3 style="color:black"><i>&#10004;</i>  Gestión de Información</h3></br>
+            </div>
+            <div class="col-sm-2 col-md-4 col-lg-4">
+                <img src="{% static 'images/information-admin-db.jpg' %}" class="img-thumbnail" />
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <span class="reader"><i> Bases de Datos SQL:</i></span></br>
+                <p class="reader" style="background-color: gray"><i>&#10004;</i> <b> MySql</b></p>
+                <p class="reader" style="background-color: gray"><i>&#10004;</i> <b> PostgreSQL</b></p></br>
+
+                <span class="reader"><i> Habilidades:</i></span></br>
+                <p class="reader" style="color: white; background-color: blue"><i>&#10004;</i> <b> Diseño y Gestión de Bases de Datos, Gestion de Redes Informáticas, Sistematización</b></p>
+            </div>
+        </div>
+        <div class="row col-sm-10 col-md-8 offset-md-2"">
+            <div class="container">
+                </b><h3 style="color:black"><i>&#10004;</i>  Asesorías y Soporte Técnico</h3></br>
+            </div>
+            <div class="col-sm-2 col-md-4 col-lg-4">
+                <img src="{% static 'images/procesador-munecos.jpg' %}" class="img-thumbnail" />
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <span class="reader"><i> Computadores y Software:</i></span></br>
+                <p class="reader" style="background-color: lightblue"><i>&#10004;</i> <b> Ensamble y Mantenimiento</b></p>
+                <p class="reader" style="background-color: orange"><i>&#10004;</i> <b> Capacitaciones</b></p></br>
+
+                <span class="reader"><i> Tecnologías:</i></span></br>
+                <p class="reader" style="color: white; background-color: blue"><i>&#10004;</i> <b> OS (Windows, Linux, Mac), suites ofimáticas (Libre Office, Microsoft Office), Diseño y Vectorizado (Corel Draw, Photoshop, InkScape, Gimp, Illustrator) </b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Experiences
+    <!-- ======================================================================= -->
+    <div class="container">
+    <!-- show any customers -->
+        </br>
+        <h1 class="reader-tittle text-center"></br>Servicios Informáticos Generales</h1>
+        
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Footer
+    <!-- ======================================================================= -->
+
+    <footer class="text-center">
+        <div class="footer">
+            <p><a href="https://github.com/SamZapata" target="_blank">@samzapata</a> 2018</p> 
+        </div>
+    </footer>
+
+    <!--FILES JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
