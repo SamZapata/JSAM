@@ -1,0 +1,141 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSAM - Bio</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- Menu Panel 
+    <!-- ======================================================================= -->
+    <div class="container">
+        <div id="navOverlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-sm-8 offset-sm-2" style="border-color: white">
+                    <a href="/index"><img src="{% static 'images/me_cascada.jpg' %}" class="img-circle" alt="My image"/></a>
+                    </br>
+                    </br>
+                    <a href="/bio" class="reader-shadow">Bio</a>
+                    </br>
+                    <a href="/profile" class="reader-shadow">Perfil Profesional</a>
+                    </br>
+                    <a href="/services" class="reader-shadow">Portafolio</a>
+                    </br>
+                    <a href="/projects" class="reader-shadow">Proyectos</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-icon">
+            <span onclick="openNav()">&#119973;</span>    
+        </div>
+    </div>
+    <!-- ======================================================================= -->
+    <!-- Content Bio
+    <!-- ======================================================================= -->
+
+    <div class="container">
+        <h1 class="reader-tittle text-center">Bio</h1>
+        <div class="row col-sm-10 col-md-8 offset-md-2">
+            <p class="reader text-justify">
+                Soy Johnny Zapata. Nací en Santiago de Cali y he crecido en uno de los lugares más marginados de la comuna 13, el barrio Belisario Betancourt; ahí en ese lugar, gracias a las bases con las que me formaron mis padres y a participar en diferentes grupos sociales de liderazgo, como el movimiento nacional de NNAJ Gestores de Paz de la organización World Vision, he aprendido a ser una persona integra, recursiva y honesta que busca no solo el desarrollo personal, sino también apostar y creer que el cambio en nuestras comunidades y la sociedad misma, no se basa solo en la adquisición desaforada de capital, ya que a partir del conocimiento, los sueños y descubrir nuestras pasiones podríamos vincularnos con otras personas, grandes o pequeños, para realizar acciones que nos permitan gestionar lo necesario a fin de generar ambientes de desarrollo sostenible. </br></br>
+                He tenido la oportunidad de participar en diferentes escenarios sociales donde las experiencias recogidas han sido significativas. A raíz de ello he decidido abrirme a la ideación y construcción de nuevas formas y espacios a través de los cuales se pueda aportar al fortalecimiento del tejido social, a su vez que el crecimiento y desarrollo tanto personal como profesional. Es así como a través de dos pasiones, <strong style="font-style: italic;">el rugby y la informática</strong>, busco aportar a la generación de nuevos espacios de participación y estilos de vida.
+            </p>
+            </br>
+        </div>
+    </div>
+    
+    <!-- ======================================================================= -->
+    <!-- Personal Information
+    <!-- ======================================================================= -->
+
+    <div class="container">
+        <h3 class="reader-tittle text-center">Información Personal</h3>
+        <div class="row col-sm-10 col-md-8 offset-md-2">
+            
+            
+                <ul class="list fa fa-3x">
+                    <li>
+                        <i>&#9794;</i>
+                        <span class="reader"> 22 / abril / 1992 </span>
+                        </br>
+                    </li>
+                    <li>
+                        <i>&#9983;</i>
+                        <span class="reader"> Cali, Colombia</span>
+                        </br>
+                    </li>
+                    <li>
+                        <i>&#9921;</i>
+                        <span class="reader">  jsamzapata@gmail.com</span>
+                    </li>
+                    <li>
+                        <i>&#9921; </i>
+                        <span class="reader">  johnny.zapata00@usc.edu.co</span>
+                    </li>
+                    <li>
+                        <i>&#9990;</i>
+                        <span class="reader">  (+57) 317 5571203</span>
+                    </li>
+                </ul>
+        </div>        
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Footer
+    <!-- ======================================================================= -->
+
+    <footer class="text-center">
+        <div class="footer">
+            <p><a href="https://github.com/SamZapata" target="_blank">@samzapata</a> 2018</p> 
+        </div>
+    </footer>
+
+
+    <!--
+    <div class="row">
+          <header id="header">
+              <div class="container">
+                  <div id="mySidenav" class="sidenav-blog">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <h2 class="header-menu" style="color: #1f1f1f">Contenido</h2>
+                      <a href="/news">Noticias</a>
+                      <a href="/histories">Historias de Vida</a>
+                      <a href="#matchs">Competencias Locales (Colombia)</a>
+                      <a href="#information">Toolbox</a>
+
+                      <div class="img-thumbnail"></div>
+
+                  </div>
+                  <!-- Use any element to open the sidenav -
+                  <span onclick="openNav()" class="pull-left menu-icon" style="color: black">☰</span>
+              </div>
+          </header>
+      </div>
+      -->
+
+    <!--FILES JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

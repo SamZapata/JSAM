@@ -1,0 +1,64 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSAM</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- Menu Panel 
+    <!-- ======================================================================= -->
+    <div class="container">
+        <div class="content-index text-center">
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->            
+            <div class="main-index col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
+                <a href="/index"><img src="{% static 'images/me_cascada.jpg' %}" class="img-circle" alt="My image"/></a>
+                </br>
+                </br>
+                <a href="/bio" class="reader-index">Bio</a>
+                </br></br>
+                <a href="/profile" class="reader-index">Perfil Profesional</a>
+                </br></br>
+                <a href="/services" class="reader-index">Portafolio</a>
+                </br></br>
+                <a href="/projects" class="reader-index">Proyectos</a>
+            </div>
+            
+            <!-- ======================================================================= -->
+            <!-- Footer
+            <!-- ======================================================================= -->
+
+            <footer class="text-center">
+                <div class="footer" style="color: white">
+                    <p><a href="https://github.com/SamZapata" target="_blank">@samzapata</a> 2018</p> 
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!--FILES JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

@@ -16,18 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls import include, url
-from blog import views
+from presentation import views
+from presentation import urls
 from django.contrib.auth import views
 
 urlpatterns = [
 #	url(r'^admin/', include(admin.site.urls)),
 
-    url(r'', include('blog.urls')),
+    url(r'', include('presentation.urls')),
+    path('presentation/index', include('presentation.urls')),
+    path('bio', include('presentation.urls')),
+    path('presentation/pre_services', include('presentation.urls')),
+
     #rutas del blog JSAM
     #path('blog/', include('blog.urls')),
-    path('index', include('blog.urls')),
-    path('bio', include('blog.urls')),
-    path('blog/post', include('blog.urls')),
+    
 
     path('admin/', admin.site.urls),
 ]

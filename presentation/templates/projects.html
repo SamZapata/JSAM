@@ -1,0 +1,112 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSAM - Projects</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- Menu Panel 
+    <!-- ======================================================================= -->
+    <div class="container">
+        <div id="navOverlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-sm-8 offset-sm-2" style="border-color: white">
+                    <a href="/index"><img src="{% static 'images/me_cascada.jpg' %}" class="img-circle" alt="My image"/></a>
+                    </br>
+                    </br>
+                    <a href="/bio" class="reader-shadow">Bio</a>
+                    </br>
+                    <a href="/profile" class="reader-shadow">Perfil Profesional</a>
+                    </br>
+                    <a href="/services" class="reader-shadow">Portafolio</a>
+                    </br>
+                    <a href="/projects" class="reader-shadow">Proyectos</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-icon">
+            <span onclick="openNav()">&#119973;</span>    
+        </div>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- Proyectos
+    <!-- ======================================================================= -->
+    <div class="container">
+        <h1 class="reader-tittle text-center">Proyectos</h1>
+        </br>
+        <div class="col-md-8 offset-2">
+            
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active reader" data-toggle="tab" href="#maul">Maul Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link reader" data-toggle="tab" href="#distritorugby">Distrito Rugby</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="maul" class="container tab-pane fade show active" role="tabpanel"><br>
+              <h3 class="reader-tittle">MAUL PROJECT</h3>
+              <span><i class="reader">&#10149;</i><a href="https://maul-app.herokuapp.com" target="_blank" style="color: #53bdfd"> Ver Prototipo</a></span>
+              <p class="reader">Nace como mi propuesta de trabajo de grado. Es un proyecto que recoge las vivencias producto del dinamismo y participación en los diferentes grupos sociales.</p>
+              <p class="reader">Si sabes de programación o diseño y te interesa apoyarme en el mejoramiento del proyecto no dudes en escribirme y revisar el repositorio en GitHub: <a href="https://github.com/SamZapata/maul" target="_blank" style="color: #53bdfd">Maul Project</a></p></br>
+
+              <div class="row">
+                  <iframe width="auto" height="auto" src="https://www.youtube.com/embed/JaPNcFgLctw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+
+            </div>
+            <div id="distritorugby" class="container tab-pane fade" role="tabpanel"><br>
+              <h3 class="reader-tittle">Distrito Rugby</h3>
+              <span><i class="reader">&#10149;</i><a href="https://distritorugby.herokuapp.com" target="_blank"> Ver Prototipo</a></span>
+              <p class="reader">Es una nueva propuesta deportiva y social que busca, a través de la práctica del rugby y otras herramientas como la tecnología, ser una estrategia de transformación social en el Distrito de Aguablanca, con la que se puedan generar nuevos espacios de participación, intercambio de saberes, apropiación del entorno y hábitos de vida más saludables.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+    <!-- ======================================================================= -->
+    <!-- Footer
+    <!-- ======================================================================= -->
+
+    <footer class="text-center">
+        <div class="footer">
+            <p><a href="https://github.com/SamZapata" target="_blank">@samzapata</a> 2018</p> 
+        </div>
+    </footer>
+
+    <!--FILES JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
