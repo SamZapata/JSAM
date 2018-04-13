@@ -23,10 +23,8 @@ from django.contrib.auth import views
 urlpatterns = [
 #	url(r'^admin/', include(admin.site.urls)),
 
-    url(r'', include('presentation.urls')),
-    path('presentation/index', include('presentation.urls')),
-    path('bio', include('presentation.urls')),
-    path('presentation/pre_services', include('presentation.urls')),
+    #url(r'', include('presentation.urls')),
+    path('', include('presentation.urls')),
 
     #rutas del blog JSAM
     #path('blog/', include('blog.urls')),
